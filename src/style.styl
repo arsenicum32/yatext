@@ -1,0 +1,68 @@
+::-webkit-scrollbar
+  display none
+body
+  background #eee
+  height 100vh
+  margin 0
+  font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+$keyframe-name = pulse
+@keyframes {$keyframe-name}
+  for i in 0..10
+    {10% * i}
+      opacity (i/10)
+
+@keyframes pro
+  from
+    margin-left 100%
+  to
+    margin-left 0%
+.cursor
+  animation-name: pro
+  animation-duration: 3s
+  margin-left 10%
+  margin-bottom 10%
+  animation-iteration-count infinite
+  border-top 2px solid black
+  p
+    position relative
+    top -20px
+    background white
+    width 80px
+
+.title
+  width 290px
+  margin-top 0
+  padding-bottom 5px
+  height 35px
+  font-weight bolder
+  position fixed
+  background white
+  box-shadow: 0 30px 15px rgba(255,255,255,0.5)
+.text
+  width 80%
+  margin-top 5%
+  margin-left 10%
+  //text-align justify
+
+
+.mrtop
+  margin-top 15%
+
+.iphone
+  width 290px
+  height 520px
+  position relative
+  left 5px
+  background white
+  overflow-y scroll
+  overflow-x hidden
+
+.dv
+  width 100vw
+  height 100vh
+  display flex
+  align-items center
+  justify-content center
+  background url( https://raw.githubusercontent.com/arsenicum32/taksa/gh-pages/img/phone-01.png ) no-repeat center center
+  background-size 400px
